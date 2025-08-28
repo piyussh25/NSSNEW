@@ -1,0 +1,33 @@
+.container {
+  text-align: center;
+  padding: 50px;
+}
+
+.login-section {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.login-box {
+  border: 1px solid #ccc;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.login-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+}

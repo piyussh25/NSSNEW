@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Attendance Records</title>
+    <link rel="stylesheet" href="attendance_display.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Attendance Records</h1>
+        <div id="student-details" class="card">
+            <h2>Student Information</h2>
+            <p><strong>Name:</strong> <span id="display-name"></span></p>
+            <p><strong>Student ID:</strong> <span id="display-student-id"></span></p>
+            <p><strong>Branch:</strong> <span id="display-branch"></span></p>
+        </div>
+
+        <div id="events-list" class="card">
+            <h2>Attended Events</h2>
+            <ul id="events-container"></ul>
+            <p id="no-events-message" style="display: none;">No events attended yet.</p>
+        </div>
+    </div>
+    <script src="attendance_display.js"></script>
+</body>
+</html>
