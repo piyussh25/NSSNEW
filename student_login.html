@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login</title>
+    <link rel="stylesheet" href="student_login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Student Login</h2>
+        <p>Enter your credentials to access your attendance records</p>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="student-id">Student ID</label>
+                <input type="text" id="student-id" name="student-id" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <div id="attendance-records" style="display: none;">
+            <h3>Your Attendance Records</h3>
+            <div id="records-content"></div>
+        </div>
+    </div>
+    <script src="student_login.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+/* style.css */
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  background-color: #0f172a;
+  color: #ffffff;
+}
+
+header {
+  background-color: #1e293b;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.NSSLOGO {
+  width: 60px;
+  height: auto;
+  border-radius: 10px;
+}
+
+#nss {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #f97316;
+  margin: 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #f97316;
+}
+
+.logos img {
+  width: 50px;
+  margin-left: 10px;
+}
+
+#banner {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+#welcome {
+  text-align: center;
+  color: #f97316;
+  margin: 30px auto;
+  padding: 10px;
+  border: 1px solid #f97316;
+  width: fit-content;
+  border-radius: 10px;
+  animation: fadeIn 1s ease-in;
+}
+
+.about,
+.info p {
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: justify;
+  background-color: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  line-height: 1.6;
+}
+
+.info h1 {
+  color: #f97316;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#tab {
+  text-align: center;
+  font-size: 2rem;
+  color: #f97316;
+  margin: 40px 0 20px;
+}
+
+.event {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.event img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.event img:hover {
+  transform: scale(1.05);
+}
+
+#butevent {
+  color: #ffffff;
+  background-color: #003366;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#butevent:hover {
+  background-color: #f97316;
+}
+
+.btn-container {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+  padding: 10px 0;
+}
+
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 200s linear infinite;
+  color: black;
+}
+
+.marquee a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
